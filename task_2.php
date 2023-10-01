@@ -8,3 +8,17 @@ function checkNumbers($n)
     print_r($oddNumbers);
 }
 checkNumbers($numbers);
+
+
+//alternative
+function checkNumbers($n)
+{
+    $oddNumbers = [];
+    foreach ($n as $number) {
+        if ($number % 2 !== 0) {
+            $oddNumbers[] = $number;
+        }
+    }
+    print_r($oddNumbers);
+}
+checkNumbers($numbers);
